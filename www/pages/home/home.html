@@ -1,0 +1,8 @@
+<ion-view view-title="Home Page" ng-controller="home as vm" style="background-color:gray">
+  <ion-content class="padding">
+    <ion-avatar>
+      <img ng-if="vm.image===null" src="http://icons.iconarchive.com/icons/papirus-team/papirus-status/256/avatar-default-icon.png" ng-click="vm.pickPicture()" height="100" width="100">
+      <img ng-if="vm.image!==null" ng-src="{{vm.image}}" ng-click="vm.takePicture()" height="100" width="100">
+    </ion-avatar>
+  </ion-content>
+</ion-view>
